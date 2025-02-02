@@ -1,6 +1,11 @@
 import React from "react";
+import Navbar from "./components/navbar";
 function App() {
-  return <div className="  bg-red-700">colo pink</div>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
