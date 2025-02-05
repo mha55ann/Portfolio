@@ -18,12 +18,11 @@ function Navbar() {
         </div>
 
         {/* Desktop Navigation Links */}
-        <ul className="hidden md:flex gap-6 justify-end ">
-
-          <li className="hover:text-green-500 cursor-pointer">Home</li>
-          <li className="hover:text-green-500 cursor-pointer">Projects</li>
-          <li className="hover:text-green-500 cursor-pointer">Experiences</li>
-          <li className="hover:text-green-500 cursor-pointer">Contact</li>
+        <ul className="hidden md:flex gap-6 justify-end text-xl">
+          <li className="hover:text-[#ae95d2] cursor-pointer">Home</li>
+          <li className="hover:text-[#ae95d2] cursor-pointer">Projects</li>
+          <li className="hover:text-[#ae95d2] cursor-pointer">Experiences</li>
+          <li className="hover:text-[#ae95d2] cursor-pointer">Contact</li>
         </ul>
 
         {/* Mobile Navigation Button */}

@@ -1,1 +1,8 @@
 @import "tailwindcss";
+@import "./style.css";
+@theme {
+  --font-primary: "Poppins", "sans-serif";
+  --breakpoint-ms: 320px;
+  --breakpoint-ml: 425px;  
+  
+}
