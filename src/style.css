@@ -1,5 +1,5 @@
 .text-gradient {
-  background: linear-gradient(60deg,#7127ba, white);
+  background: linear-gradient(60deg, #7127ba, white);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -14,3 +14,22 @@
   backface-visibility: hidden;
 }
 
+.btn-style4 {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-style4:hover {
+  box-shadow: inset 0 0 0.55em 0em #716eef; /* Inner shadow effect */
+  border-color: #716eef; /* Border color on hover */
+  color: #716eef; /* Text color on hover */
+}
+
+.btn-style5 {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-style5:hover {
+  box-shadow: inset 0 0 0.55em 0em hwb(241 2% 53%); /* Inner shadow effect */
+  border-color: #2925ff; /* Border color on hover */
+  color: #2825e9; /* Text color on hover */
+}
