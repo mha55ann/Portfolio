@@ -18,7 +18,7 @@ function Projects() {
             Project Name........
           </div>
           <div className=" text-white font-primary bg-white/6 backdrop-blur-sm p-5  rounded-lg mt-5 btn-style6 ">
-            A web app for visualizing personalized Spotify data. View your top
+           A web app for visualizing personalized Spotify data. View your top
             artists, top tracks, recently played tracks, and detailed audio
             information about each track. Create and save new playlists of
             recommended tracks based on your existing playlists and more.
