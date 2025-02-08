@@ -3,7 +3,7 @@ import imgproj from "../images/project1.jpg";
 function Projects() {
   return (
     //container
-    <div className=" bg-[#11071f]   ">
+    <div  id="projects" className=" bg-[#11071f]   ">
       {/* project headding */}
       <div className="text-center text-3xl font-bold text-white text-gradient1 font-primary top-[35px] relative">
         PROJECTS

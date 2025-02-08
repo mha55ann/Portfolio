@@ -19,10 +19,10 @@ function Navbar() {
 
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex gap-6 justify-end text-xl">
-          <li className="hover:text-[#ae95d2] cursor-pointer">Home</li>
-          <li className="hover:text-[#ae95d2] cursor-pointer">Projects</li>
-          <li className="hover:text-[#ae95d2] cursor-pointer">Experiences</li>
-          <li className="hover:text-[#ae95d2] cursor-pointer">Contact</li>
+        <a href="#home" className="hover:text-[#ae95d2] cursor-pointer">Home</a>
+      <a href="#projects" className="hover:text-[#ae95d2] cursor-pointer">Projects</a>
+      <a href="#experiences" className="hover:text-[#ae95d2] cursor-pointer">Experiences</a>
+      <a href="#contact" className="hover:text-[#ae95d2] cursor-pointer">Contact</a>
         </ul>
 
         {/* Mobile Navigation Button */}
@@ -35,24 +35,23 @@ function Navbar() {
 
       {/* Mobile Navigation Menu */}
       {clicked && (
-        <div className="bg-[rgb(17,7,31)] w-full text-white md:hidden">
-          <ul>
-            <li className="text-center border-b border-white text-xl p-3">
-              Home
-            </li>
-            <li className="text-center border-b border-white text-xl p-3">
-              Projects
-            </li>
-            <li className="text-center border-b border-white text-xl p-3">
-              Experiences
-            </li>
-            <li className="text-center border-b border-white text-xl p-3">
-              Contact
-            </li>
-          </ul>
-        </div>
-        
-      )}
+  <div className="bg-[rgb(17,7,31)] w-full text-white md:hidden">
+    <ul>
+      <li className="text-center border-b border-white text-xl p-3">
+        <a href="#home">Home</a>
+      </li>
+      <li className="text-center border-b border-white text-xl p-3">
+        <a href="#projects">Projects</a>
+      </li>
+      <li className="text-center border-b border-white text-xl p-3">
+        <a href="#experiences">Experiences</a>
+      </li>
+      <li className="text-center border-b border-white text-xl p-3">
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+)}
     </>
   );
 }

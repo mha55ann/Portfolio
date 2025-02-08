@@ -4,7 +4,9 @@
   --font-primary: "Poppins", "sans-serif";
   --breakpoint-ms: 320px;
   --breakpoint-mm: 375px;
-  --breakpoint-ml: 429px;  
+  --breakpoint-ml: 429px;
   --breakpoint-s: 366px;
-  
+}
+html {
+  scroll-behavior: smooth;
 }

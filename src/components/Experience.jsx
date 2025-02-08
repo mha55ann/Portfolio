@@ -3,9 +3,9 @@ import React from "react";
 function Experience({ Exp }) {
   return (
     <>
-      <div className="bg-[#11071f]  p-5">
+      <div id="experiences" className="bg-[#11071f]  py-5">
         
-        <h1 className="text-center text-3xl font-bold text-white text-gradient1 font-primary pt-10">
+        <h1 className="text-center text-3xl font-bold text-white text-gradient1 font-primary pb-10">
           
           {Exp.main}
         </h1>
