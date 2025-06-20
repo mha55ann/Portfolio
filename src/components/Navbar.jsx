@@ -8,44 +8,46 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   const handleToggle = useCallback(() => {
-    setIsOpen(prev => !prev);
+    setIsOpen((prev) => !prev);
   }, []);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "Projects", href: "#projects" },
-    { name: "Experiences", href: "#experiences" },
-    { name: "Contact", href: "#contact" }
+
+    { name: "Services", href: "#services" },
+    { name: "Reviews", href: "#reviews" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const mobileMenuVariants = {
     hidden: { opacity: 0, y: -20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: {
         staggerChildren: 0.1,
-        when: "beforeChildren"
-      }
+        when: "beforeChildren",
+      },
     },
-    exit: { opacity: 0, y: -20 }
+    exit: { opacity: 0, y: -20 },
   };
 
   const linkVariants = {
     hidden: { opacity: 0, x: -20 },
-    visible: { opacity: 1, x: 0 }
+    visible: { opacity: 1, x: 0 },
   };
 
   return (
-    <motion.nav 
+    <motion.nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled ? "bg-[#11071f]/90 backdrop-blur-md py-2" : "bg-[#11071f] py-4"
       } ${isOpen ? "bg-[#11071f]" : ""}`}
@@ -55,13 +57,18 @@ function Navbar() {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
-        <motion.div 
+        <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="z-50"
         >
           <a href="#home">
-            <img src={images} alt="Logo" width={80} className="hover:opacity-80 transition-opacity" />
+            <img
+              src={images}
+              alt="Logo"
+              width={80}
+              className="hover:opacity-80 transition-opacity"
+            />
           </a>
         </motion.div>
 
@@ -73,8 +80,8 @@ function Navbar() {
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              <a 
-                href={link.href} 
+              <a
+                href={link.href}
                 className="text-white hover:text-purple-300 transition-colors duration-300 font-medium text-lg relative group"
               >
                 {link.name}

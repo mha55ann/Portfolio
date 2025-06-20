@@ -34,7 +34,7 @@ function Experience() {
 
   return (
     <div
-      id="experiences"
+      id="reviews"
       className="bg-[#11071f] py-16 px-4 sm:px-8 font-primary"
     >
       {/* Client Reviews Section */}
