@@ -2,7 +2,7 @@ import React, { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import me from "../images/my.png";
 import insta from "../images/insta.png";
-import Gradient from "../images/gradient.png";
+import Gradient from "../images/Gradient.png";
 import { IoMail } from "react-icons/io5";
 import { BsLinkedin } from "react-icons/bs";
 import { RxGithubLogo } from "react-icons/rx";
