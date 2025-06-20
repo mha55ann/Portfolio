@@ -1,53 +1,123 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { IoMail } from "react-icons/io5";
 import { BsLinkedin } from "react-icons/bs";
-import { SiInstagram } from "react-icons/si";
 import { RxGithubLogo } from "react-icons/rx";
 
 function Footer() {
+  const socialLinks = [
+    {
+      icon: <BsLinkedin className="text-lg" />,
+      url: "https://www.linkedin.com/in/muhammad-hassan-537682264/",
+      name: "LinkedIn",
+      color: "hover:text-blue-400",
+    },
+    {
+      icon: <IoMail className="text-lg" />,
+      url: "mailto:ha55ansmail525@gmail.com",
+      name: "Email",
+      color: "hover:text-red-400",
+    },
+    {
+      icon: <RxGithubLogo className="text-lg" />,
+      url: "https://github.com/mha55ann",
+      name: "GitHub",
+      color: "hover:text-purple-400",
+    },
+  ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        when: "beforeChildren",
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { y: 10, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+      },
+    },
+  };
+
   return (
-    <div id="contact" className="bg-[#11071f]">
-      <div className="bg-white/6 backdrop-blur-sm text-white flex flex-col gap-y-5 py-7  px-4 sm:px-[25%]">
-        <div className="text-3xl bold">Contact</div>
-        <div className="italic text-lg ">
-          If you need a <span className="bold">Frontend Developer</span> to
-          build responsive websites and dynamic web applications, I'm here to
-          help! With expertise in{" "}
-          <span className="bold">
-            React, Tailwind CSS, and modern frontend frameworks,
-          </span>{" "}
-          I can create user-friendly and high-performance solutions.{" "}
-          <span className="bold">Let’s connect!</span>
-        </div>
-        <div className="flex gap-3">
-          <IoMail className="text-2xl" />
-          ha55ansmail525@gmail.com
-        </div>
-        <div className="flex text-xl gap-3">
-          <a
-            href="https://www.linkedin.com/in/muhammad-hassan-537682264/"
-            target="_blank"
-            rel="noopener noreferrer"
+    <motion.footer
+      id="contact"
+      className="bg-[#11071f] border-t border-white/10"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-50px" }}
+      variants={containerVariants}
+    >
+      <div className="bg-gradient-to-b from-white/5 to-white/[0.02] backdrop-blur-sm text-white py-8 px-6 sm:px-12">
+        <motion.div variants={itemVariants}>
+          <h2 className="text-2xl font-bold mb-4">
+            Let's{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+              Connect
+            </span>
+          </h2>
+
+          <motion.p
+            className="text-base text-white/80 mb-6 leading-relaxed"
+            variants={itemVariants}
           >
-            <BsLinkedin />
-          </a>
+            Need a{" "}
+            <span className="font-medium text-white">Frontend Developer</span>?
+            With expertise in{" "}
+            <span className="font-medium text-white">
+              React and Tailwind CSS
+            </span>
+            , I build user-friendly, high-performance solutions.
+          </motion.p>
+        </motion.div>
+
+        <motion.div
+          className="flex items-center gap-3 mb-6"
+          variants={itemVariants}
+        >
+          <IoMail className="text-xl text-purple-400" />
           <a
             href="mailto:ha55ansmail525@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            className="text-base hover:text-purple-300 transition-colors"
           >
-            <IoMail />
+            ha55ansmail525@gmail.com
           </a>
-          <a
-            href="https://github.com/mha55ann"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <RxGithubLogo />
-          </a>
-        </div>
+        </motion.div>
+
+        <motion.div className="flex gap-5 mb-8" variants={itemVariants}>
+          {socialLinks.map((link, index) => (
+            <motion.a
+              key={index}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`text-white/80 ${link.color} transition-colors duration-300`}
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              aria-label={link.name}
+            >
+              {link.icon}
+            </motion.a>
+          ))}
+        </motion.div>
+
+        <motion.div
+          className="pt-4 border-t border-white/10 text-center text-white/60 text-xs"
+          variants={itemVariants}
+        >
+          <p>© {new Date().getFullYear()} Muhammad Hassan</p>
+        </motion.div>
       </div>
-    </div>
+    </motion.footer>
   );
 }
 

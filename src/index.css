@@ -10,3 +10,17 @@
 html {
   scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: #11071f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #9857d3);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #6053f1);
+}
