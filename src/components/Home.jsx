@@ -7,6 +7,7 @@ import { IoMail } from "react-icons/io5";
 import { BsLinkedin } from "react-icons/bs";
 import { RxGithubLogo } from "react-icons/rx";
 import { FiDownload } from "react-icons/fi";
+import { MdMiscellaneousServices } from "react-icons/md";
 
 function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -144,11 +145,10 @@ function Home() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="/path-to-cv.pdf" // Replace with actual CV path
-              download
+              href="#services" // Replace with actual CV path
               className="px-8 py-3 bg-transparent border border-purple-400 text-white rounded-full font-medium flex items-center justify-center gap-2 hover:bg-purple-900/20 transition-all"
             >
-              <FiDownload /> Download CV
+              <MdMiscellaneousServices /> Services
             </motion.a>
           </motion.div>
         </motion.div>
