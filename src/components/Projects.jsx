@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ecommerceImg from "../images/myestore.png";
 import restaurantImg from "../images/website.png";
-import portfolioImg from "../images/myestore.png"; // Replace with actual portfolio image
+import portfolioImg from "../images/portfolio.png"; // Replace with actual portfolio image
 
 const Projects = () => {
   const projects = [
