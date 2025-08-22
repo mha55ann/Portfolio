@@ -2,6 +2,7 @@ import React, { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import me from "../images/my.png";
 import insta from "../images/insta.png";
+import cv from "../images/Muhammad Hassan Resume.pdf";
 import Gradient from "../images/Gradient.png";
 import { IoMail } from "react-icons/io5";
 import { BsLinkedin } from "react-icons/bs";
@@ -145,10 +146,10 @@ function Home() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="#services" // Replace with actual CV path
+              href={cv} // Replace with actual CV path
               className="px-8 py-3 bg-transparent border border-purple-400 text-white rounded-full font-medium flex items-center justify-center gap-2 hover:bg-purple-900/20 transition-all"
             >
-              <MdMiscellaneousServices /> Resume
+               Resume
             </motion.a>
           </motion.div>
         </motion.div>
