@@ -148,7 +148,7 @@ function Home() {
               href="#services" // Replace with actual CV path
               className="px-8 py-3 bg-transparent border border-purple-400 text-white rounded-full font-medium flex items-center justify-center gap-2 hover:bg-purple-900/20 transition-all"
             >
-              <MdMiscellaneousServices /> Services
+              <MdMiscellaneousServices /> Resume
             </motion.a>
           </motion.div>
         </motion.div>
