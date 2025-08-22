@@ -40,7 +40,7 @@ function Experience() {
       {/* Client Reviews Section */}
       <div className="max-w-7xl mx-auto">
         <h2 className="text-center text-3xl font-semibold text-white mb-10">
-          What Clients Say (it's random )
+          What Clients Say (Random Reviews)
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
