@@ -1,0 +1,50 @@
+.text-gradient {
+  background: linear-gradient(60deg, #38046c, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.perspective {
+  perspective: 1000px;
+}
+.transform-style {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.btn-style4 {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-style4:hover {
+  box-shadow: inset 0 0 0.55em 0em #716eef; /* Inner shadow effect */
+  border-color: #716eef; /* Border color on hover */
+  color: #716eef; /* Text color on hover */
+}
+
+.btn-style5 {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-style5:hover {
+  box-shadow: inset 0 0 0.55em 0em hsl(241, 90%, 25%); /* Inner shadow effect */
+  border-color: #2925ff; /* Border color on hover */
+  color: #2825e9; /* Text color on hover */
+}
+.btn-style6 {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-style6:hover {
+  box-shadow: inset 0 0 0.55em 0em hsl(241, 90%, 25%); /* Inner shadow effect */
+  border-color: #2925ff; /* Border color on hover */
+  color: #9c9bf3; /* Text color on hover */
+}
+.text-gradient1 {
+  background: linear-gradient(to top, #38046c, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
