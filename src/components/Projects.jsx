@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ecommerceImg from "../images/myestore.png";
 import restaurantImg from "../images/website.png";
-import portfolioImg from "../images/portfolio.png"; // Replace with actual portfolio image
+import currencyImg from "../images/currency-converter.png"; // Replace with actual screenshot
 
 const Projects = () => {
   const projects = [
@@ -19,31 +19,27 @@ const Projects = () => {
       ],
       image: ecommerceImg,
       link: "https://ecommerce-website-eta-jade.vercel.app/",
+      github: "https://github.com/mha55ann/Ecommerce-website.git",
       reverse: false,
     },
     {
       title: "Savoury Bytes – Restaurant Website",
       description:
         "A responsive and visually appealing restaurant website featuring a modern layout, interactive menu, smooth navigation, and engaging call-to-action sections to enhance user experience and promote the brand online.",
-      technologies: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
+      technologies: ["React.js", "Tailwind CSS", "React Router", "JavaScript"],
       image: restaurantImg,
-      link: "https://savoury-bytes.vercel.app/index.html",
+      link: "https://savoury-bytes.vercel.app/",
+      github: "https://github.com/mha55ann/savoury-bytes-.git",
       reverse: true,
     },
     {
-      title: "Personal Portfolio Website",
+      title: "Currency Converter",
       description:
-        "A modern, responsive portfolio website built to showcase skills and projects. Includes smooth navigation, animations, and a clean UI design that demonstrates frontend development abilities.",
-      technologies: [
-        "React.js",
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Tailwind CSS",
-        "React Router",
-      ],
-      image: portfolioImg,
-      link: "#",
+        "A simple and efficient currency converter web app that delivers real-time exchange rates between currencies. Built with a clean, intuitive interface for fast and accurate conversions.",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Exchange Rate API"],
+      image: currencyImg,
+      link: "https://currency-converter-drab-sigma.vercel.app/",
+      github: "https://github.com/mha55ann/currency-converter.git",
       reverse: false,
     },
   ];
@@ -133,16 +129,28 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-                {project.link !== "#" && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block mt-6 px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg text-white font-medium transition-colors duration-300"
-                  >
-                    View Project
-                  </a>
-                )}
+                <div className="flex flex-wrap gap-3 mt-6">
+                  {project.link !== "#" && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg text-white font-medium transition-colors duration-300"
+                    >
+                      View Project
+                    </a>
+                  )}
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-6 py-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg text-white font-medium transition-colors duration-300"
+                    >
+                      View Code
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </motion.div>
