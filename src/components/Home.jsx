@@ -25,7 +25,7 @@ function Home() {
     },
     {
       icon: <IoMail className="text-4xl sm:text-5xl" />,
-      url: "mailto:hassansmail24@gmail.com",
+      url: "mailto:hassansmails24@gmail.com",
       name: "Email",
     },
     {
