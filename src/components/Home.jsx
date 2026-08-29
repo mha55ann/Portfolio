@@ -179,7 +179,7 @@ function Home() {
               <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">
                 National Skills University
               </h3>
-              <p className="text-lg sm:text-xl text-purple-300 font-semibold">
+              <p className="text-xl sm:text-2xl text-purple-300 font-semibold">
                 Islamabad
               </p>
               <p className="text-base text-white/80 mt-3">
