@@ -20,13 +20,13 @@ function Research() {
   const researchDetails = [
     "Deep Learning & Graph Neural Networks (GNN) focus",
     "Anti-Money Laundering (AML) Detection system",
-    "Potential for publication (1-3 papers expected)",
-    "Academic research combined with practical application",
+    "Peer-reviewed academic research publication trajectory",
+    "Combining theoretical graph topology with practical financial analytics",
   ];
 
   const technologies = [
     "Python",
-    "TensorFlow / PyTorch",
+    "PyTorch / PyTorch Geometric",
     "Graph Neural Networks",
     "Deep Learning",
     "Machine Learning",
@@ -72,20 +72,20 @@ function Research() {
                 Anti-Money Laundering Detection using GNN
               </h3>
               <p className="text-[#c084fc] mt-1 text-sm sm:text-base">
-                Final Year Project & Research Initiative (subject to approval)
+                Final Year Research Initiative | National Skills University Islamabad
               </p>
             </div>
           </div>
 
-          {/* Timeline */}
+          {/* Status & Timeline */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 bg-[#21103c]/60 p-4 rounded-xl border border-purple-500/20">
             <div>
-              <p className="text-[#c084fc]/70 text-sm font-medium">Start Date</p>
-              <p className="text-white font-semibold">September 15, 2026</p>
+              <p className="text-[#c084fc]/70 text-sm font-medium">Research Status</p>
+              <p className="text-white font-semibold">Literature Review & Architecture Phase</p>
             </div>
             <div>
-              <p className="text-[#c084fc]/70 text-sm font-medium">Completion</p>
-              <p className="text-white font-semibold">June 2027</p>
+              <p className="text-[#c084fc]/70 text-sm font-medium">Timeline</p>
+              <p className="text-white font-semibold">2026 – 2027</p>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ function Research() {
           <div className="mb-6">
             <h4 className="text-white font-semibold mb-3">Project Overview</h4>
             <p className="text-white/80 leading-relaxed">
-              Developing an advanced Anti-Money Laundering (AML) detection system leveraging Graph Neural Networks (GNN) and deep learning techniques. This project combines academic research with practical application in financial crime detection, with the potential to publish 1-3 research papers in peer-reviewed venues.
+              Developing an advanced Anti-Money Laundering (AML) detection system leveraging Graph Neural Networks (GNN) and deep learning techniques. This project combines academic research with practical application in financial crime detection, focusing on modeling complex transaction networks to identify illegal financial flows.
             </p>
           </div>
 
@@ -147,19 +147,19 @@ function Research() {
           <ul className="space-y-3 text-white/80">
             <li className="flex items-start gap-3">
               <span className="text-[#d926a9] font-bold mt-1">•</span>
-              <span>Develop and optimize GNN models for financial transaction analysis</span>
+              <span>Develop and optimize GNN models for complex financial transaction topologies</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-[#d926a9] font-bold mt-1">•</span>
-              <span>Create robust AML detection systems using deep learning</span>
+              <span>Create robust AML detection systems using graph embeddings and deep learning</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-[#d926a9] font-bold mt-1">•</span>
-              <span>Publish research findings in academic conferences and journals</span>
+              <span>Publish research findings in peer-reviewed academic conferences and journals</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-[#d926a9] font-bold mt-1">•</span>
-              <span>Contribute to financial security and regulatory compliance</span>
+              <span>Contribute to financial security, graph analytics, and regulatory compliance</span>
             </li>
           </ul>
         </motion.div>
