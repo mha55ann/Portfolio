@@ -60,23 +60,24 @@ function Footer() {
       <div className="bg-gradient-to-b from-white/5 to-white/[0.02] backdrop-blur-sm text-white py-8 px-6 sm:px-12">
         <motion.div variants={itemVariants}>
           <h2 className="text-2xl font-bold mb-4">
-            Let's{" "}
+            Open to{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-              Connect
+              Academic Inquiry & Research Collaboration
             </span>
           </h2>
 
           <motion.p
-            className="text-base text-white/80 mb-6 leading-relaxed"
+            className="text-base text-white/80 mb-6 leading-relaxed max-w-2xl"
             variants={itemVariants}
           >
-            Need a{" "}
-            <span className="font-medium text-white">Frontend Developer</span>?
-            With expertise in{" "}
+            I am actively preparing for my postgraduate research journey and
+            welcome discussions on{" "}
             <span className="font-medium text-white">
-              React and Tailwind CSS
+              Graph Neural Networks
             </span>
-            , I build user-friendly, high-performance solutions.
+            ,{" "}
+            <span className="font-medium text-white">AI/ML applications</span>
+            , or potential research collaborations.
           </motion.p>
         </motion.div>
 
