@@ -78,7 +78,7 @@ function Home() {
             >
               Hello, I'm{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-                Mohammad Hassan
+                Muhammad Hassan
               </span>
             </motion.h1>
 
