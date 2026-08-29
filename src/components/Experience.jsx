@@ -26,7 +26,7 @@ function Experience() {
   };
 
   return (
-    <section id="experience" className="bg-[#11071f] py-20 px-4 sm:px-8">
+    <section id="experience" className="bg-white py-20 px-4 sm:px-8">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -34,10 +34,10 @@ function Experience() {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <h2 className="text-3xl sm:text-4xl font-bold text-white font-primary">
-          <span className="text-purple-400">Experience</span>
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-primary">
+          <span className="text-cyan-600">Experience</span>
         </h2>
-        <p className="text-white/70 mt-3 max-w-2xl mx-auto">
+        <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
           Real client work, delivered through freelance frontend development
         </p>
       </motion.div>
@@ -49,20 +49,20 @@ function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-purple-400/30 transition-all duration-300"
+          className="bg-gray-50 rounded-2xl p-6 sm:p-8 border border-cyan-200 hover:border-cyan-400 transition-all duration-300 shadow-sm hover:shadow-md"
         >
           <div className="flex items-start gap-4 mb-6">
-            <div className="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center flex-shrink-0">
-              <HiOutlineBriefcase className="text-2xl text-purple-400" />
+            <div className="w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center flex-shrink-0">
+              <HiOutlineBriefcase className="text-2xl text-cyan-600" />
             </div>
             <div>
-              <h3 className="text-xl sm:text-2xl font-bold text-white">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
                 Freelance Frontend Developer
               </h3>
-              <div className="flex items-center gap-2 text-white/60 mt-1 text-sm sm:text-base">
+              <div className="flex items-center gap-2 text-gray-600 mt-1 text-sm sm:text-base">
                 <SiFiverr className="text-[#1DBF73] text-lg" />
                 <span>Fiverr</span>
-                <span className="text-white/30">|</span>
+                <span className="text-gray-300">|</span>
                 <span>2025 — Present</span>
               </div>
             </div>
@@ -79,9 +79,9 @@ function Experience() {
               <motion.li
                 key={i}
                 variants={itemVariants}
-                className="flex items-start gap-2 text-white/80"
+                className="flex items-start gap-2 text-gray-700"
               >
-                <FaCheckCircle className="text-purple-400 mt-1 flex-shrink-0" />
+                <FaCheckCircle className="text-cyan-600 mt-1 flex-shrink-0" />
                 <span>{point}</span>
               </motion.li>
             ))}
@@ -97,31 +97,31 @@ function Experience() {
           className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
           {/* Client Project */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-purple-400/30 transition-all duration-300 flex flex-col">
-            <h4 className="text-lg font-semibold text-white mb-3">
+          <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 border border-cyan-200 hover:border-cyan-400 transition-all duration-300 flex flex-col shadow-sm hover:shadow-md">
+            <h4 className="text-lg font-semibold text-gray-900 mb-3">
               Client Project
             </h4>
-            <p className="text-white/80 mb-5 flex-grow">
+            <p className="text-gray-700 mb-5 flex-grow">
               Designed and implemented a calm, premium, user-centered
               questionnaire experience.
             </p>
 
             <div className="mb-5">
-              <h5 className="text-white/60 text-sm font-medium mb-1">
+              <h5 className="text-gray-600 text-sm font-medium mb-1">
                 Result
               </h5>
-              <p className="text-white">Received 5-star Fiverr review.</p>
+              <p className="text-gray-900 font-medium">Received 5-star Fiverr review.</p>
             </div>
 
             <div>
-              <h5 className="text-white/60 text-sm font-medium mb-2">
+              <h5 className="text-gray-600 text-sm font-medium mb-2">
                 Technologies
               </h5>
               <div className="flex flex-wrap gap-2">
                 {["HTML", "CSS", "Responsive Design"].map((tech, i) => (
                   <span
                     key={i}
-                    className="bg-purple-500/10 text-purple-400 px-3 py-1 rounded-full text-sm"
+                    className="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm border border-cyan-300"
                   >
                     {tech}
                   </span>
@@ -131,18 +131,18 @@ function Experience() {
           </div>
 
           {/* Client Feedback */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-purple-400/30 transition-all duration-300 flex flex-col">
-            <h4 className="text-lg font-semibold text-white mb-3">
+          <div className="bg-cyan-50 rounded-2xl p-6 sm:p-8 border border-cyan-200 hover:border-cyan-400 transition-all duration-300 flex flex-col shadow-sm hover:shadow-md">
+            <h4 className="text-lg font-semibold text-gray-900 mb-3">
               Client Feedback
             </h4>
             <div className="text-yellow-400 text-lg mb-4">★★★★★</div>
-            <p className="text-white/80 italic mb-6 flex-grow">
+            <p className="text-gray-700 italic mb-6 flex-grow">
               "Muhammad fully understood the emotional intent behind our
               questionnaire and delivered a calm, premium experience that
               exceeded our expectations — professional, responsive, and
               aligned with our vision throughout."
             </p>
-            <p className="text-white/60 text-sm">— Francis, Nyumba Yetu</p>
+            <p className="text-gray-600 text-sm">— Francis, Nyumba Yetu</p>
           </div>
         </motion.div>
       </div>
