@@ -37,7 +37,7 @@ function Certificates() {
   };
 
   return (
-    <section id="certificates" className="bg-[#11071f] py-20 px-4 sm:px-8">
+    <section id="certificates" className="bg-white py-20 px-4 sm:px-8">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -45,10 +45,10 @@ function Certificates() {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <h2 className="text-3xl sm:text-4xl font-bold text-white font-primary">
-          <span className="text-purple-400">Certifications</span>
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-primary">
+          <span className="text-cyan-600">Certifications</span>
         </h2>
-        <p className="text-white/70 mt-3 max-w-2xl mx-auto">
+        <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
           Professional certifications and credentials in web development, cloud computing, and AI
         </p>
       </motion.div>
@@ -64,24 +64,24 @@ function Certificates() {
           <motion.div
             key={index}
             variants={itemVariants}
-            className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-purple-400/30 transition-all duration-300 group relative overflow-hidden"
+            className="bg-gray-50 rounded-2xl p-6 sm:p-8 border border-cyan-200 hover:border-cyan-400 transition-all duration-300 group relative overflow-hidden shadow-sm hover:shadow-md"
           >
             {/* Background Gradient */}
-            <div className="absolute -top-20 -right-20 w-40 h-40 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition-all duration-300"></div>
+            <div className="absolute -top-20 -right-20 w-40 h-40 bg-cyan-100/20 rounded-full blur-2xl group-hover:bg-cyan-100/40 transition-all duration-300"></div>
 
             {/* Content */}
             <div className="relative z-10">
               {/* Header with Icon and Status */}
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-xl bg-purple-500/10 flex items-center justify-center flex-shrink-0 text-2xl">
+                  <div className="w-14 h-14 rounded-xl bg-cyan-100 flex items-center justify-center flex-shrink-0 text-2xl">
                     {cert.icon}
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-white">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900">
                       {cert.title}
                     </h3>
-                    <p className="text-purple-400 text-sm font-medium mt-1">
+                    <p className="text-cyan-600 text-sm font-medium mt-1">
                       {cert.issuer}
                     </p>
                   </div>
@@ -93,8 +93,8 @@ function Certificates() {
                 <span
                   className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium ${
                     cert.status === "Completed"
-                      ? "bg-green-500/10 text-green-400 border border-green-400/30"
-                      : "bg-blue-500/10 text-blue-400 border border-blue-400/30"
+                      ? "bg-green-100 text-green-700 border border-green-300"
+                      : "bg-blue-100 text-blue-700 border border-blue-300"
                   }`}
                 >
                   <MdVerified className="text-lg" />
@@ -103,19 +103,19 @@ function Certificates() {
               </div>
 
               {/* Description */}
-              <p className="text-white/80 text-sm leading-relaxed mb-4">
+              <p className="text-gray-700 text-sm leading-relaxed mb-4">
                 {cert.description}
               </p>
 
               {/* Footer */}
-              <div className="flex items-center gap-2 text-white/60 text-xs sm:text-sm">
-                <FaCertificate className="text-purple-400" />
+              <div className="flex items-center gap-2 text-gray-600 text-xs sm:text-sm">
+                <FaCertificate className="text-cyan-600" />
                 <span>Professional Credential</span>
               </div>
             </div>
 
             {/* Border Glow on Hover */}
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500/0 via-purple-500/0 to-purple-500/0 group-hover:from-purple-500/5 group-hover:via-purple-500/5 group-hover:to-purple-500/5 transition-all duration-300 pointer-events-none"></div>
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-100/0 via-cyan-100/0 to-cyan-100/0 group-hover:from-cyan-100/10 group-hover:via-cyan-100/10 group-hover:to-cyan-100/10 transition-all duration-300 pointer-events-none"></div>
           </motion.div>
         ))}
       </motion.div>
@@ -126,10 +126,10 @@ function Certificates() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="max-w-4xl mx-auto mt-12 bg-purple-500/5 border border-purple-400/20 rounded-xl p-6 text-center"
+        className="max-w-4xl mx-auto mt-12 bg-cyan-50 border border-cyan-300 rounded-xl p-6 text-center"
       >
-        <p className="text-white/80 text-sm sm:text-base">
-          <span className="text-purple-400 font-semibold">Continuous Learning:</span> Actively pursuing professional certifications to expand expertise in AI/ML, cloud computing, and full-stack development
+        <p className="text-gray-700 text-sm sm:text-base">
+          <span className="text-cyan-600 font-semibold">Continuous Learning:</span> Actively pursuing professional certifications to expand expertise in AI/ML, cloud computing, and full-stack development
         </p>
       </motion.div>
     </section>
