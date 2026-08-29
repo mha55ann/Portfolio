@@ -34,7 +34,8 @@ function Research() {
   ];
 
   return (
-    <section id="research" className="bg-[#11071f] py-20 px-4 sm:px-8">
+    <section id="research" className="bg-[#0b0314] py-20 px-4 sm:px-8">
+      {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -43,7 +44,7 @@ function Research() {
         className="text-center mb-16"
       >
         <h2 className="text-3xl sm:text-4xl font-bold text-white font-primary">
-          <span className="text-purple-400">Research & Final Year Project</span>
+          Research & <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-400">Final Year Project</span>
         </h2>
         <p className="text-white/70 mt-3 max-w-2xl mx-auto">
           Conducting research-driven academic work focused on AI/ML applications
@@ -57,30 +58,30 @@ function Research() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-purple-400/30 transition-all duration-300"
+          className="bg-[#130924]/60 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-purple-900/40 hover:border-pink-500/40 transition-all duration-300 shadow-xl"
         >
           <div className="flex items-start gap-4 mb-6">
-            <div className="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center flex-shrink-0">
-              <HiOutlineSparkles className="text-2xl text-purple-400" />
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-pink-500/20 to-purple-600/20 border border-pink-500/30 flex items-center justify-center flex-shrink-0">
+              <HiOutlineSparkles className="text-2xl text-pink-400" />
             </div>
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-white">
                 Anti-Money Laundering Detection using GNN
               </h3>
-              <p className="text-white/70 mt-1 text-sm sm:text-base">
+              <p className="text-purple-300/80 mt-1 text-sm sm:text-base">
                 Final Year Project & Research Initiative
               </p>
             </div>
           </div>
 
           {/* Timeline */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 bg-purple-500/10 p-4 rounded-lg border border-purple-400/20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 bg-purple-950/30 p-4 rounded-xl border border-purple-500/20">
             <div>
-              <p className="text-white/70 text-sm font-medium">Start Date</p>
+              <p className="text-purple-300/70 text-sm font-medium">Start Date</p>
               <p className="text-white font-semibold">September 15, 2024</p>
             </div>
             <div>
-              <p className="text-white/70 text-sm font-medium">Completion</p>
+              <p className="text-purple-300/70 text-sm font-medium">Completion</p>
               <p className="text-white font-semibold">June 2027</p>
             </div>
           </div>
@@ -107,7 +108,7 @@ function Research() {
                 variants={itemVariants}
                 className="flex items-start gap-2 text-white/80"
               >
-                <FaCheckCircle className="text-purple-400 mt-1 flex-shrink-0" />
+                <FaCheckCircle className="text-pink-400 mt-1 flex-shrink-0" />
                 <span>{point}</span>
               </motion.li>
             ))}
@@ -120,7 +121,7 @@ function Research() {
               {technologies.map((tech, i) => (
                 <span
                   key={i}
-                  className="bg-purple-500/10 text-purple-400 px-3 py-1 rounded-full text-sm border border-purple-400/30"
+                  className="bg-purple-900/30 text-purple-300 px-3 py-1 rounded-full text-sm border border-purple-500/30"
                 >
                   {tech}
                 </span>
@@ -135,26 +136,26 @@ function Research() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-purple-400/30 transition-all duration-300"
+          className="bg-[#130924]/60 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-purple-900/40 hover:border-pink-500/40 transition-all duration-300 shadow-xl"
         >
           <h4 className="text-lg sm:text-xl font-semibold text-white mb-4">
             Research Objectives
           </h4>
           <ul className="space-y-3 text-white/80">
             <li className="flex items-start gap-3">
-              <span className="text-purple-400 font-bold mt-1">•</span>
+              <span className="text-pink-400 font-bold mt-1">•</span>
               <span>Develop and optimize GNN models for financial transaction analysis</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-purple-400 font-bold mt-1">•</span>
+              <span className="text-pink-400 font-bold mt-1">•</span>
               <span>Create robust AML detection systems using deep learning</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-purple-400 font-bold mt-1">•</span>
+              <span className="text-pink-400 font-bold mt-1">•</span>
               <span>Publish research findings in academic conferences and journals</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-purple-400 font-bold mt-1">•</span>
+              <span className="text-pink-400 font-bold mt-1">•</span>
               <span>Contribute to financial security and regulatory compliance</span>
             </li>
           </ul>
