@@ -9,6 +9,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { RxGithubLogo } from "react-icons/rx";
 import { FiDownload } from "react-icons/fi";
 import { MdMiscellaneousServices } from "react-icons/md";
+import { FaAward } from "react-icons/fa";
 
 function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -61,96 +62,123 @@ function Home() {
     <section id="home" className="relative z-10 overflow-hidden">
       {/* Hero Section */}
       <div className="bg-[#11071f] min-h-screen flex flex-col justify-center items-center pt-20 pb-16 px-4">
-        {/* Profile Image with 3D Effect */}
-        <motion.div
-          className="relative z-20 mb-12"
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="relative w-60 h-60 sm:w-72 sm:h-72 group perspective-1000">
-            <motion.div
-              className="relative w-full h-full transition-all duration-500 transform-style-preserve-3d group-hover:rotate-y-180"
-              whileHover={{ scale: 1.05 }}
-            >
-              {/* Front Side */}
-              <div className="absolute inset-0 backface-hidden rounded-full overflow-hidden border-4 border-purple-400/30 shadow-lg">
-                <img
-                  src={me}
-                  className="w-full h-full object-cover"
-                  alt="Muhammad Hassan"
-                />
-              </div>
-
-              {/* Back Side */}
-              <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-full overflow-hidden border-4 border-purple-400/30 bg-gradient-to-br from-purple-500/10 to-pink-500/10 flex items-center justify-center">
-                <div className="text-center p-4">
-                  <p className="text-white font-bold text-lg">
-                    Frontend Developer
-                  </p>
-                  <p className="text-purple-300 mt-2">
-                    Let's build something amazing!
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-          <img
-            src={Gradient}
-            className="absolute -z-10 w-80 sm:w-96 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-            alt="Gradient background"
-          />
-        </motion.div>
-
-        {/* Introduction Text */}
-        <motion.div
-          className="text-center max-w-4xl mx-auto"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6"
-            variants={itemVariants}
-          >
-            Hello, I'm{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-              Muhammad Hassan
-            </span>
-          </motion.h1>
-
-          <motion.p
-            className="text-lg sm:text-xl text-white/80 leading-relaxed mb-10 px-4"
-            variants={itemVariants}
-          >
-       Building responsive, modern, and user-focused web applications using React.js, JavaScript, and Tailwind CSS.
-          </motion.p>
-
-          {/* Buttons */}
+        {/* Main Content Container - Flex Row with Photo on Right */}
+        <div className="w-full max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
+          {/* Left: Introduction Text */}
           <motion.div
-            className="flex flex-col sm:flex-row justify-center gap-4"
-            variants={itemVariants}
+            className="flex-1 text-left"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
           >
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={toggleContact}
-              className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-medium shadow-lg hover:shadow-purple-500/30 transition-all"
+            <motion.h1
+              className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4"
+              variants={itemVariants}
             >
-              Get In Touch
-            </motion.button>
+              Hello, I'm{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+                Mohammad Hassan
+              </span>
+            </motion.h1>
 
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href={cv} // Replace with actual CV path
-              className="px-8 py-3 bg-transparent border border-purple-400 text-white rounded-full font-medium flex items-center justify-center gap-2 hover:bg-purple-900/20 transition-all"
+            <motion.div
+              className="flex items-center gap-2 mb-4"
+              variants={itemVariants}
             >
-               Resume
-            </motion.a>
+              <span className="text-2xl text-purple-400 font-semibold">
+                Computer Science Student
+              </span>
+            </motion.div>
+
+            <motion.p
+              className="text-lg sm:text-xl text-white/80 leading-relaxed mb-4"
+              variants={itemVariants}
+            >
+              <span className="font-semibold text-purple-300">AI/ML & Data Science</span> | Exploring intelligent systems and applying machine learning to real-world problems
+            </motion.p>
+
+            <motion.div
+              className="flex items-center gap-2 mb-6 bg-purple-500/10 border border-purple-400/30 rounded-lg p-4 w-fit"
+              variants={itemVariants}
+            >
+              <FaAward className="text-purple-400 text-xl flex-shrink-0" />
+              <span className="text-white font-medium">Scholarship Aspirant - Japan Next</span>
+            </motion.div>
+
+            <motion.p
+              className="text-base text-white/70 mb-6 font-medium"
+              variants={itemVariants}
+            >
+              BS Computer Science • National Skills University Islamabad
+            </motion.p>
+
+            {/* Buttons */}
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4 mb-6"
+              variants={itemVariants}
+            >
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={toggleContact}
+                className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-medium shadow-lg hover:shadow-purple-500/30 transition-all"
+              >
+                Get In Touch
+              </motion.button>
+
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href={cv}
+                className="px-8 py-3 bg-transparent border border-purple-400 text-white rounded-full font-medium flex items-center justify-center gap-2 hover:bg-purple-900/20 transition-all"
+              >
+                <FiDownload /> Download CV
+              </motion.a>
+            </motion.div>
           </motion.div>
-        </motion.div>
+
+          {/* Right: Profile Image with 3D Effect */}
+          <motion.div
+            className="flex-1 flex justify-center"
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 group perspective-1000">
+              <motion.div
+                className="relative w-full h-full transition-all duration-500 transform-style-preserve-3d group-hover:rotate-y-180"
+                whileHover={{ scale: 1.05 }}
+              >
+                {/* Front Side */}
+                <div className="absolute inset-0 backface-hidden rounded-full overflow-hidden border-4 border-purple-400/30 shadow-lg">
+                  <img
+                    src={me}
+                    className="w-full h-full object-cover"
+                    alt="Mohammad Hassan"
+                  />
+                </div>
+
+                {/* Back Side */}
+                <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-full overflow-hidden border-4 border-purple-400/30 bg-gradient-to-br from-purple-500/10 to-pink-500/10 flex items-center justify-center">
+                  <div className="text-center p-4">
+                    <p className="text-white font-bold text-lg">
+                      AI/ML Researcher
+                    </p>
+                    <p className="text-purple-300 mt-2 text-sm">
+                      Deep Learning • Graph Neural Networks
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+            <img
+              src={Gradient}
+              className="absolute -z-10 w-80 sm:w-96 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              alt="Gradient background"
+            />
+          </motion.div>
+        </div>
       </div>
 
       {/* Contact Modal */}
