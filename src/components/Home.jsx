@@ -61,7 +61,7 @@ function Home() {
   return (
     <section id="home" className="relative z-10 overflow-hidden">
       {/* Hero Section */}
-      <div className="bg-[#11071f] min-h-screen flex flex-col justify-center items-center pt-20 pb-16 px-4">
+      <div className="bg-white min-h-screen flex flex-col justify-center items-center pt-20 pb-16 px-4">
         {/* Main Content Container - Flex Row with Photo on Right */}
         <div className="w-full max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
           {/* Left: Introduction Text */}
@@ -73,11 +73,11 @@ function Home() {
             viewport={{ once: true }}
           >
             <motion.h1
-              className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4"
               variants={itemVariants}
             >
               Hello, I'm{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+              <span className="text-cyan-600">
                 Mohammad Hassan
               </span>
             </motion.h1>
@@ -86,24 +86,24 @@ function Home() {
               className="flex items-center gap-2 mb-4"
               variants={itemVariants}
             >
-              <span className="text-2xl text-purple-400 font-semibold">
+              <span className="text-2xl text-cyan-600 font-semibold">
                 Computer Science Student
               </span>
             </motion.div>
 
             <motion.p
-              className="text-lg sm:text-xl text-white/80 leading-relaxed mb-4"
+              className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-4"
               variants={itemVariants}
             >
-              <span className="font-semibold text-purple-300">AI/ML & Data Science</span> | Exploring intelligent systems and applying machine learning to real-world problems
+              <span className="font-semibold text-cyan-700">AI/ML & Data Science</span> | Exploring intelligent systems and applying machine learning to real-world problems
             </motion.p>
 
             <motion.div
-              className="flex items-center gap-2 mb-6 bg-purple-500/10 border border-purple-400/30 rounded-lg p-4 w-fit"
+              className="flex items-center gap-2 mb-6 bg-cyan-50 border border-cyan-300 rounded-lg p-4 w-fit"
               variants={itemVariants}
             >
-              <FaAward className="text-purple-400 text-xl flex-shrink-0" />
-              <span className="text-white font-medium">Japan MEXT Scholarship Aspirant</span>
+              <FaAward className="text-cyan-600 text-xl flex-shrink-0" />
+              <span className="text-gray-800 font-medium">Japan MEXT Scholarship Aspirant</span>
             </motion.div>
 
             {/* Buttons */}
@@ -115,7 +115,7 @@ function Home() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={toggleContact}
-                className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-medium shadow-lg hover:shadow-purple-500/30 transition-all"
+                className="px-8 py-3 bg-gradient-to-r from-cyan-600 to-cyan-700 text-white rounded-full font-medium shadow-lg hover:shadow-cyan-600/30 transition-all"
               >
                 Get In Touch
               </motion.button>
@@ -124,7 +124,7 @@ function Home() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href={cv}
-                className="px-8 py-3 bg-transparent border border-purple-400 text-white rounded-full font-medium flex items-center justify-center gap-2 hover:bg-purple-900/20 transition-all"
+                className="px-8 py-3 bg-transparent border border-cyan-600 text-cyan-600 rounded-full font-medium flex items-center justify-center gap-2 hover:bg-cyan-50 transition-all"
               >
                 <FiDownload /> Download CV
               </motion.a>
@@ -144,7 +144,7 @@ function Home() {
                 whileHover={{ scale: 1.05 }}
               >
                 {/* Front Side */}
-                <div className="absolute inset-0 backface-hidden rounded-full overflow-hidden border-4 border-purple-400/30 shadow-lg">
+                <div className="absolute inset-0 backface-hidden rounded-full overflow-hidden border-4 border-cyan-400 shadow-lg">
                   <img
                     src={me}
                     className="w-full h-full object-cover"
@@ -153,12 +153,12 @@ function Home() {
                 </div>
 
                 {/* Back Side */}
-                <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-full overflow-hidden border-4 border-purple-400/30 bg-gradient-to-br from-purple-500/10 to-pink-500/10 flex items-center justify-center">
+                <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-full overflow-hidden border-4 border-cyan-400 bg-gradient-to-br from-cyan-100 to-cyan-200 flex items-center justify-center">
                   <div className="text-center p-4">
-                    <p className="text-white font-bold text-lg">
+                    <p className="text-gray-900 font-bold text-lg">
                       AI/ML Researcher
                     </p>
-                    <p className="text-purple-300 mt-2 text-sm">
+                    <p className="text-cyan-700 mt-2 text-sm">
                       Deep Learning • Graph Neural Networks
                     </p>
                   </div>
@@ -176,13 +176,13 @@ function Home() {
               className="text-center mt-4"
               variants={itemVariants}
             >
-              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
                 National Skills University
               </h3>
-              <p className="text-lg sm:text-xl text-purple-300 font-semibold">
+              <p className="text-lg sm:text-xl text-cyan-600 font-semibold">
                 Islamabad
               </p>
-              <p className="text-base text-white/80 mt-3">
+              <p className="text-base text-gray-600 mt-3">
                 BS Computer Science
               </p>
             </motion.div>
@@ -205,17 +205,17 @@ function Home() {
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 50 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-[#11071f] border border-purple-400/30 rounded-xl p-8 max-w-md w-full relative overflow-hidden"
+              className="bg-white border border-cyan-300 rounded-xl p-8 max-w-md w-full relative overflow-hidden"
             >
-              <div className="absolute -top-20 -right-20 w-40 h-40 bg-purple-500/10 rounded-full blur-xl"></div>
-              <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-pink-500/10 rounded-full blur-xl"></div>
+              <div className="absolute -top-20 -right-20 w-40 h-40 bg-cyan-200/20 rounded-full blur-xl"></div>
+              <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-cyan-200/20 rounded-full blur-xl"></div>
 
               <div className="relative z-10 flex flex-col items-center">
                 <img src={insta} alt="Contact" className="w-24 mb-4" />
-                <h3 className="text-2xl font-bold text-white mb-2">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
                   Let's Connect!
                 </h3>
-                <p className="text-white/80 mb-6 text-center">
+                <p className="text-gray-600 mb-6 text-center">
                   Feel free to reach out through any of these platforms
                 </p>
 
@@ -228,7 +228,7 @@ function Home() {
                       rel="noopener noreferrer"
                       whileHover={{ y: -5 }}
                       whileTap={{ scale: 0.9 }}
-                      className="flex flex-col items-center text-white hover:text-purple-300 transition-colors"
+                      className="flex flex-col items-center text-gray-700 hover:text-cyan-600 transition-colors"
                       aria-label={link.name}
                     >
                       {link.icon}
@@ -238,7 +238,7 @@ function Home() {
 
                 <button
                   onClick={toggleContact}
-                  className="mt-8 px-6 py-2 text-white border border-white/20 rounded-full hover:bg-white/10 transition-colors"
+                  className="mt-8 px-6 py-2 text-gray-700 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors"
                 >
                   Close
                 </button>
