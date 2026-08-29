@@ -72,7 +72,7 @@ function Research() {
                 Anti-Money Laundering Detection using GNN
               </h3>
               <p className="text-[#c084fc] mt-1 text-sm sm:text-base">
-                Final Year Project & Research Initiative
+                Final Year Project & Research Initiative (subject to approval)
               </p>
             </div>
           </div>
@@ -81,7 +81,7 @@ function Research() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 bg-[#21103c]/60 p-4 rounded-xl border border-purple-500/20">
             <div>
               <p className="text-[#c084fc]/70 text-sm font-medium">Start Date</p>
-              <p className="text-white font-semibold">September 15, 2024</p>
+              <p className="text-white font-semibold">September 15, 2026</p>
             </div>
             <div>
               <p className="text-[#c084fc]/70 text-sm font-medium">Completion</p>
