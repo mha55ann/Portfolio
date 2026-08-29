@@ -4,50 +4,56 @@ import {
   SiReact,
   SiJavascript,
   SiTailwindcss,
-  SiBootstrap,
   SiGit,
   SiGithub,
   SiVercel,
   SiNodedotjs,
-  SiExpress,
-  SiMongodb,
+  SiPython,
+  SiPytorch,
+  SiTensorflow,
+  SiScikitlearn,
+  SiPandas,
+  SiNumpy,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import { TbStack2, TbBinaryTree2 } from "react-icons/tb";
+import { TbStack2 } from "react-icons/tb";
 
 function TechStack() {
   const stackGroups = [
     {
-      title: "Frontend",
+      title: "AI / ML & Research",
+      items: [
+        { name: "Python", icon: <SiPython />, color: "#3776AB" },
+        { name: "PyTorch", icon: <SiPytorch />, color: "#EE4C2C" },
+        { name: "TensorFlow", icon: <SiTensorflow />, color: "#FF6F00" },
+        { name: "scikit-learn", icon: <SiScikitlearn />, color: "#F7931E" },
+        { name: "Pandas", icon: <SiPandas />, color: "#150458" },
+        { name: "NumPy", icon: <SiNumpy />, color: "#013243" },
+      ],
+    },
+    {
+      title: "Web Engineering",
       items: [
         { name: "React.js", icon: <SiReact />, color: "#61DAFB" },
         { name: "JavaScript", icon: <SiJavascript />, color: "#F7DF1E" },
         { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "#38BDF8" },
-        { name: "Bootstrap", icon: <SiBootstrap />, color: "#7952B3" },
+        { name: "Node.js", icon: <SiNodedotjs />, color: "#5FA04E" },
       ],
     },
     {
-      title: "State Management",
+      title: "State & Architecture",
       items: [
         { name: "Zustand", icon: <TbStack2 />, color: "#C084FC" },
-        { name: "Context API", icon: <TbBinaryTree2 />, color: "#F472B6" },
+        { name: "REST APIs", icon: <TbStack2 />, color: "#38BDF8" },
       ],
     },
     {
-      title: "Tools",
+      title: "Development Tools",
       items: [
         { name: "Git", icon: <SiGit />, color: "#F05032" },
         { name: "GitHub", icon: <SiGithub />, color: "#FFFFFF" },
         { name: "Vercel", icon: <SiVercel />, color: "#FFFFFF" },
         { name: "VS Code", icon: <VscVscode />, color: "#007ACC" },
-      ],
-    },
-    {
-      title: "Backend",
-      items: [
-        { name: "Node.js", icon: <SiNodedotjs />, color: "#5FA04E" },
-        { name: "Express.js", icon: <SiExpress />, color: "#FFFFFF" },
-        { name: "MongoDB", icon: <SiMongodb />, color: "#47A248" },
       ],
     },
   ];
@@ -93,8 +99,7 @@ function TechStack() {
           Tech <span className="text-purple-400">Stack</span>
         </h2>
         <p className="text-white/70 mt-3 max-w-2xl mx-auto">
-          Technologies and tools I use to build modern, responsive web
-          applications
+          Technologies and analytical tools leveraging machine learning research and full-stack engineering.
         </p>
       </motion.div>
 
