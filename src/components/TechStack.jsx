@@ -37,8 +37,8 @@ function TechStack() {
       title: "Tools",
       items: [
         { name: "Git", icon: <SiGit />, color: "#F05032" },
-        { name: "GitHub", icon: <SiGithub />, color: "#FFFFFF" },
-        { name: "Vercel", icon: <SiVercel />, color: "#FFFFFF" },
+        { name: "GitHub", icon: <SiGithub />, color: "#333333" },
+        { name: "Vercel", icon: <SiVercel />, color: "#000000" },
         { name: "VS Code", icon: <VscVscode />, color: "#007ACC" },
       ],
     },
@@ -46,7 +46,7 @@ function TechStack() {
       title: "Backend",
       items: [
         { name: "Node.js", icon: <SiNodedotjs />, color: "#5FA04E" },
-        { name: "Express.js", icon: <SiExpress />, color: "#FFFFFF" },
+        { name: "Express.js", icon: <SiExpress />, color: "#000000" },
         { name: "MongoDB", icon: <SiMongodb />, color: "#47A248" },
       ],
     },
@@ -81,7 +81,7 @@ function TechStack() {
   };
 
   return (
-    <section id="tech-stack" className="bg-[#11071f] py-20 px-4 sm:px-8">
+    <section id="tech-stack" className="bg-gray-50 py-20 px-4 sm:px-8">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -89,10 +89,10 @@ function TechStack() {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <h2 className="text-3xl sm:text-4xl font-bold text-white font-primary">
-          Tech <span className="text-purple-400">Stack</span>
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-primary">
+          Tech <span className="text-cyan-600">Stack</span>
         </h2>
-        <p className="text-white/70 mt-3 max-w-2xl mx-auto">
+        <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
           Technologies and tools I use to build modern, responsive web
           applications
         </p>
@@ -109,9 +109,9 @@ function TechStack() {
           <motion.div
             key={idx}
             variants={groupVariants}
-            className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-purple-400/30 transition-all duration-300"
+            className="bg-white rounded-2xl p-6 border border-cyan-200 hover:border-cyan-400 transition-all duration-300 shadow-sm hover:shadow-md"
           >
-            <h3 className="text-lg font-semibold text-white mb-5 pb-3 border-b border-white/10">
+            <h3 className="text-lg font-semibold text-gray-900 mb-5 pb-3 border-b border-gray-200">
               {group.title}
             </h3>
 
@@ -129,7 +129,7 @@ function TechStack() {
                   >
                     {item.icon}
                   </span>
-                  <span className="text-white/80 group-hover:text-white transition-colors duration-300 text-sm sm:text-base">
+                  <span className="text-gray-700 group-hover:text-cyan-600 transition-colors duration-300 text-sm sm:text-base font-medium">
                     {item.name}
                   </span>
                 </motion.div>
