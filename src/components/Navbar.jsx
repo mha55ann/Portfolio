@@ -22,6 +22,8 @@ function Navbar() {
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "Tech Stack", href: "#tech-stack" },
+    { name: "Research", href: "#research" },
+    { name: "Certificates", href: "#certificates" },
     { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
     { name: "Education", href: "#education" },
