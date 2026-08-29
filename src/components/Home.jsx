@@ -103,19 +103,12 @@ function Home() {
               variants={itemVariants}
             >
               <FaAward className="text-purple-400 text-xl flex-shrink-0" />
-              <span className="text-white font-medium">Scholarship Aspirant - Japan Next</span>
+              <span className="text-white font-medium">Japan MEXT Scholarship Aspirant</span>
             </motion.div>
-
-            <motion.p
-              className="text-base text-white/70 mb-6 font-medium"
-              variants={itemVariants}
-            >
-              BS Computer Science • National Skills University Islamabad
-            </motion.p>
 
             {/* Buttons */}
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 mb-6"
+              className="flex flex-col sm:flex-row gap-4"
               variants={itemVariants}
             >
               <motion.button
@@ -138,14 +131,14 @@ function Home() {
             </motion.div>
           </motion.div>
 
-          {/* Right: Profile Image with 3D Effect */}
+          {/* Right: Profile Image with 3D Effect and University Info */}
           <motion.div
-            className="flex-1 flex justify-center"
+            className="flex-1 flex flex-col items-center"
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 group perspective-1000">
+            <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 group perspective-1000 mb-8">
               <motion.div
                 className="relative w-full h-full transition-all duration-500 transform-style-preserve-3d group-hover:rotate-y-180"
                 whileHover={{ scale: 1.05 }}
@@ -177,6 +170,22 @@ function Home() {
               className="absolute -z-10 w-80 sm:w-96 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               alt="Gradient background"
             />
+
+            {/* University Info Below Photo */}
+            <motion.div
+              className="text-center mt-4"
+              variants={itemVariants}
+            >
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">
+                National Skills University
+              </h3>
+              <p className="text-lg sm:text-xl text-purple-300 font-semibold">
+                Islamabad
+              </p>
+              <p className="text-base text-white/80 mt-3">
+                BS Computer Science
+              </p>
+            </motion.div>
           </motion.div>
         </div>
       </div>
