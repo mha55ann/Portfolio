@@ -34,7 +34,7 @@ function Research() {
   ];
 
   return (
-    <section id="research" className="bg-[#11071f] py-20 px-4 sm:px-8">
+    <section id="research" className="bg-gray-50 py-20 px-4 sm:px-8">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -42,10 +42,10 @@ function Research() {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <h2 className="text-3xl sm:text-4xl font-bold text-white font-primary">
-          <span className="text-purple-400">Research & Final Year Project</span>
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-primary">
+          <span className="text-cyan-600">Research & Final Year Project</span>
         </h2>
-        <p className="text-white/70 mt-3 max-w-2xl mx-auto">
+        <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
           Conducting research-driven academic work focused on AI/ML applications
         </p>
       </motion.div>
@@ -57,38 +57,38 @@ function Research() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-purple-400/30 transition-all duration-300"
+          className="bg-white rounded-2xl p-6 sm:p-8 border border-cyan-200 hover:border-cyan-400 transition-all duration-300 shadow-sm hover:shadow-md"
         >
           <div className="flex items-start gap-4 mb-6">
-            <div className="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center flex-shrink-0">
-              <HiOutlineSparkles className="text-2xl text-purple-400" />
+            <div className="w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center flex-shrink-0">
+              <HiOutlineSparkles className="text-2xl text-cyan-600" />
             </div>
             <div>
-              <h3 className="text-xl sm:text-2xl font-bold text-white">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
                 Anti-Money Laundering Detection using GNN
               </h3>
-              <p className="text-white/60 mt-1 text-sm sm:text-base">
+              <p className="text-gray-600 mt-1 text-sm sm:text-base">
                 Final Year Project & Research Initiative
               </p>
             </div>
           </div>
 
           {/* Timeline */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 bg-purple-500/5 p-4 rounded-lg border border-purple-400/20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 bg-cyan-50 p-4 rounded-lg border border-cyan-200">
             <div>
-              <p className="text-white/60 text-sm font-medium">Start Date</p>
-              <p className="text-white font-semibold">September 15, 2024</p>
+              <p className="text-gray-600 text-sm font-medium">Start Date</p>
+              <p className="text-gray-900 font-semibold">September 15, 2024</p>
             </div>
             <div>
-              <p className="text-white/60 text-sm font-medium">Completion</p>
-              <p className="text-white font-semibold">June 2027</p>
+              <p className="text-gray-600 text-sm font-medium">Completion</p>
+              <p className="text-gray-900 font-semibold">June 2027</p>
             </div>
           </div>
 
           {/* Project Description */}
           <div className="mb-6">
-            <h4 className="text-white font-semibold mb-3">Project Overview</h4>
-            <p className="text-white/80 leading-relaxed">
+            <h4 className="text-gray-900 font-semibold mb-3">Project Overview</h4>
+            <p className="text-gray-700 leading-relaxed">
               Developing an advanced Anti-Money Laundering (AML) detection system leveraging Graph Neural Networks (GNN) and deep learning techniques. This project combines academic research with practical application in financial crime detection, with the potential to publish 1-3 research papers in peer-reviewed venues.
             </p>
           </div>
@@ -105,9 +105,9 @@ function Research() {
               <motion.li
                 key={i}
                 variants={itemVariants}
-                className="flex items-start gap-2 text-white/80"
+                className="flex items-start gap-2 text-gray-700"
               >
-                <FaCheckCircle className="text-purple-400 mt-1 flex-shrink-0" />
+                <FaCheckCircle className="text-cyan-600 mt-1 flex-shrink-0" />
                 <span>{point}</span>
               </motion.li>
             ))}
@@ -115,12 +115,12 @@ function Research() {
 
           {/* Technologies */}
           <div>
-            <h4 className="text-white font-semibold mb-3">Technologies & Tools</h4>
+            <h4 className="text-gray-900 font-semibold mb-3">Technologies & Tools</h4>
             <div className="flex flex-wrap gap-2">
               {technologies.map((tech, i) => (
                 <span
                   key={i}
-                  className="bg-purple-500/10 text-purple-400 px-3 py-1 rounded-full text-sm border border-purple-400/20"
+                  className="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm border border-cyan-300"
                 >
                   {tech}
                 </span>
@@ -135,26 +135,26 @@ function Research() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-purple-400/30 transition-all duration-300"
+          className="bg-white rounded-2xl p-6 sm:p-8 border border-cyan-200 hover:border-cyan-400 transition-all duration-300 shadow-sm hover:shadow-md"
         >
-          <h4 className="text-lg sm:text-xl font-semibold text-white mb-4">
+          <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-4">
             Research Objectives
           </h4>
-          <ul className="space-y-3 text-white/80">
+          <ul className="space-y-3 text-gray-700">
             <li className="flex items-start gap-3">
-              <span className="text-purple-400 font-bold mt-1">•</span>
+              <span className="text-cyan-600 font-bold mt-1">•</span>
               <span>Develop and optimize GNN models for financial transaction analysis</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-purple-400 font-bold mt-1">•</span>
+              <span className="text-cyan-600 font-bold mt-1">•</span>
               <span>Create robust AML detection systems using deep learning</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-purple-400 font-bold mt-1">•</span>
+              <span className="text-cyan-600 font-bold mt-1">•</span>
               <span>Publish research findings in academic conferences and journals</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-purple-400 font-bold mt-1">•</span>
+              <span className="text-cyan-600 font-bold mt-1">•</span>
               <span>Contribute to financial security and regulatory compliance</span>
             </li>
           </ul>
