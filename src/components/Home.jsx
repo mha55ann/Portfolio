@@ -103,7 +103,7 @@ function Home() {
               variants={itemVariants}
             >
               <FaAward className="text-purple-400 text-xl flex-shrink-0" />
-              <span className="text-white font-medium">Japan MEXT Scholarship Aspirant</span>
+              <span className="text-white font-medium">Scholarship Seeker</span>
             </motion.div>
 
             {/* Buttons */}
