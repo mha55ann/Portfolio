@@ -18,19 +18,19 @@ function Research() {
   };
 
   const researchDetails = [
-    "Deep Learning & Graph Neural Networks (GNN) focus",
-    "Anti-Money Laundering (AML) Detection system",
-    "Peer-reviewed academic research publication trajectory",
-    "Combining theoretical graph topology with practical financial analytics",
+    "AI/ML-based system for detecting suspicious patterns and potentially illicit activity in financial transaction data",
+    "Researching existing AML detection approaches, datasets, machine learning/deep learning techniques, and evaluation methodologies",
+    "Exploring data-driven methods for modelling complex financial transaction patterns and improving financial crime detection",
+    "Project methodology and research direction subject to final approval and literature review",
   ];
 
   const technologies = [
     "Python",
-    "PyTorch / PyTorch Geometric",
-    "Graph Neural Networks",
-    "Deep Learning",
     "Machine Learning",
+    "Deep Learning",
     "Data Science",
+    "Financial Analytics",
+    "Pattern Detection",
   ];
 
   return (
@@ -50,7 +50,7 @@ function Research() {
           </span>
         </h2>
         <p className="text-white/70 mt-3 max-w-2xl mx-auto">
-          Conducting research-driven academic work focused on AI/ML applications
+          Conducting research-driven academic work focused on AI/ML applications in financial crime detection
         </p>
       </motion.div>
 
@@ -69,10 +69,10 @@ function Research() {
             </div>
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-white">
-                Anti-Money Laundering Detection using GNN
+                Anti-Money Laundering Detection
               </h3>
               <p className="text-[#c084fc] mt-1 text-sm sm:text-base">
-                Final Year Research Initiative | National Skills University Islamabad
+                Final Year Project & Research Initiative | National Skills University Islamabad
               </p>
             </div>
           </div>
@@ -85,7 +85,7 @@ function Research() {
             </div>
             <div>
               <p className="text-[#c084fc]/70 text-sm font-medium">Timeline</p>
-              <p className="text-white font-semibold">2026 – 2027</p>
+              <p className="text-white font-semibold">Sep 2026 – 2027</p>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ function Research() {
           <div className="mb-6">
             <h4 className="text-white font-semibold mb-3">Project Overview</h4>
             <p className="text-white/80 leading-relaxed">
-              Developing an advanced Anti-Money Laundering (AML) detection system leveraging Graph Neural Networks (GNN) and deep learning techniques. This project combines academic research with practical application in financial crime detection, focusing on modeling complex transaction networks to identify illegal financial flows.
+              Developing an AI/ML-based system for detecting suspicious patterns and potentially illicit activity in financial transaction data. This project aims to advance Anti-Money Laundering (AML) detection capabilities through innovative approaches in data science and machine learning.
             </p>
           </div>
 
@@ -112,7 +112,7 @@ function Research() {
                 className="flex items-start gap-2 text-white/80"
               >
                 <FaCheckCircle className="text-[#d926a9] mt-1 flex-shrink-0" />
-                <span>{point}</span>
+                <span className="text-sm sm:text-base">{point}</span>
               </motion.li>
             ))}
           </motion.ul>
@@ -147,19 +147,19 @@ function Research() {
           <ul className="space-y-3 text-white/80">
             <li className="flex items-start gap-3">
               <span className="text-[#d926a9] font-bold mt-1">•</span>
-              <span>Develop and optimize GNN models for complex financial transaction topologies</span>
+              <span>Develop AI/ML-based systems for detecting suspicious patterns in financial transactions</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-[#d926a9] font-bold mt-1">•</span>
-              <span>Create robust AML detection systems using graph embeddings and deep learning</span>
+              <span>Research and evaluate existing AML detection methodologies and datasets</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-[#d926a9] font-bold mt-1">•</span>
-              <span>Publish research findings in peer-reviewed academic conferences and journals</span>
+              <span>Implement data-driven methods for modeling complex financial transaction patterns</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-[#d926a9] font-bold mt-1">•</span>
-              <span>Contribute to financial security, graph analytics, and regulatory compliance</span>
+              <span>Improve financial crime detection capabilities and regulatory compliance</span>
             </li>
           </ul>
         </motion.div>
