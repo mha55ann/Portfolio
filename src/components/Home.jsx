@@ -126,7 +126,7 @@ function Home() {
                 href={cv}
                 className="px-8 py-3 bg-transparent border border-purple-400 text-white rounded-full font-medium flex items-center justify-center gap-2 hover:bg-purple-900/20 transition-all"
               >
-                <FiDownload /> Download CV
+                <FiDownload /> View CV
               </motion.a>
             </motion.div>
           </motion.div>
