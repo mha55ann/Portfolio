@@ -14,7 +14,7 @@ function Footer() {
     },
     {
       icon: <IoMail className="text-lg" />,
-      url: "mailto:ha55ansmail525@gmail.com",
+      url: "mailto:hassansmails24@gmail.com",
       name: "Email",
       color: "hover:text-red-400",
     },
@@ -87,10 +87,10 @@ function Footer() {
         >
           <IoMail className="text-xl text-purple-400" />
           <a
-            href="mailto:ha55ansmail525@gmail.com"
+            href="mailto:hassansmails24@gmail.com"
             className="text-base hover:text-purple-300 transition-colors"
           >
-            ha55ansmail525@gmail.com
+           hassansmails24@gmail.com
           </a>
         </motion.div>
 
