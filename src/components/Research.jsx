@@ -18,19 +18,25 @@ function Research() {
   };
 
   const researchDetails = [
-    "AI/ML-based system for detecting suspicious patterns and potentially illicit activity in financial transaction data",
-    "Researching existing AML detection approaches, datasets, machine learning/deep learning techniques, and evaluation methodologies",
-    "Exploring data-driven methods for modelling complex financial transaction patterns and improving financial crime detection",
-    "Project methodology and research direction subject to final approval and literature review",
+    "Multimodal AI system for forecasting localized wildfire risk up to five days in advance",
+    "Combining satellite-derived environmental features, meteorological time-series data, and historical fire activity",
+    "Using Sentinel-2 and Landsat imagery, NOAA weather data, and NASA FIRMS records to model changing wildfire conditions",
+    "Applying explainable AI techniques to identify the environmental and weather factors that influence each prediction",
   ];
 
   const technologies = [
     "Python",
-    "Machine Learning",
-    "Deep Learning",
-    "Data Science",
-    "Financial Analytics",
-    "Pattern Detection",
+    "PyTorch",
+    "Google Earth Engine",
+    "Sentinel-2 & Landsat",
+    "NASA FIRMS",
+    "NOAA Weather Data",
+    "Vision Transformers",
+    "LSTM",
+    "GeoPandas & Rasterio",
+    "SHAP",
+    "Streamlit",
+    "FastAPI & Docker",
   ];
 
   return (
@@ -50,7 +56,7 @@ function Research() {
           </span>
         </h2>
         <p className="text-white/70 mt-3 max-w-2xl mx-auto">
-          Conducting research-driven academic work focused on AI/ML applications in financial crime detection
+          Investigating multimodal geospatial AI for proactive wildfire risk forecasting and environmental decision support
         </p>
       </motion.div>
 
@@ -69,7 +75,7 @@ function Research() {
             </div>
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-white">
-                Anti-Money Laundering Detection
+                Multimodal Wildfire Risk Forecasting
               </h3>
               <p className="text-[#c084fc] mt-1 text-sm sm:text-base">
                 Final Year Project & Research Initiative | National Skills University Islamabad
@@ -81,7 +87,7 @@ function Research() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 bg-[#21103c]/60 p-4 rounded-xl border border-purple-500/20">
             <div>
               <p className="text-[#c084fc]/70 text-sm font-medium">Research Status</p>
-              <p className="text-white font-semibold">Literature Review & Architecture Phase</p>
+              <p className="text-white font-semibold">Literature Review & Model Development</p>
             </div>
             <div>
               <p className="text-[#c084fc]/70 text-sm font-medium">Timeline</p>
@@ -93,7 +99,7 @@ function Research() {
           <div className="mb-6">
             <h4 className="text-white font-semibold mb-3">Project Overview</h4>
             <p className="text-white/80 leading-relaxed">
-              Developing an AI/ML-based system for detecting suspicious patterns and potentially illicit activity in financial transaction data. This project aims to advance Anti-Money Laundering (AML) detection capabilities through innovative approaches in data science and machine learning.
+              This research explores a proactive wildfire risk forecasting system that combines satellite imagery, geospatial environmental indicators, and meteorological time-series data. The project aims to estimate localized wildfire risk up to five days ahead by learning how factors such as temperature, humidity, wind, vegetation condition, and previous fire activity interact across geographic regions. Deep learning models, including Vision Transformers for spatial features and LSTM networks for temporal patterns, are investigated through a multimodal fusion approach. The system also incorporates explainable AI to make predictions more interpretable and support earlier, better-informed disaster management decisions.
             </p>
           </div>
 
@@ -147,19 +153,19 @@ function Research() {
           <ul className="space-y-3 text-white/80">
             <li className="flex items-start gap-3">
               <span className="text-[#d926a9] font-bold mt-1">•</span>
-              <span>Develop AI/ML-based systems for detecting suspicious patterns in financial transactions</span>
+              <span>Develop a multimodal forecasting framework that integrates remote sensing and meteorological data for localized wildfire-risk assessment</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-[#d926a9] font-bold mt-1">•</span>
-              <span>Research and evaluate existing AML detection methodologies and datasets</span>
+              <span>Extract meaningful spatial features from Sentinel-2 and Landsat imagery alongside environmental indicators collected through Google Earth Engine</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-[#d926a9] font-bold mt-1">•</span>
-              <span>Implement data-driven methods for modeling complex financial transaction patterns</span>
+              <span>Model temporal weather patterns and historical fire activity to forecast wildfire risk for up to five days ahead</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-[#d926a9] font-bold mt-1">•</span>
-              <span>Improve financial crime detection capabilities and regulatory compliance</span>
+              <span>Use SHAP-based explanations and interactive Streamlit and Folium visualizations to support transparent environmental decision-making</span>
             </li>
           </ul>
         </motion.div>
