@@ -22,7 +22,7 @@ function WeChat() {
 
         <div className="mx-auto max-w-md rounded-3xl border border-white/10 bg-white p-5 shadow-2xl shadow-purple-950/40">
           <img
-            src="/wechat-qr.png"
+            src="../images/wechat-qr.png"
             alt="Muhammad Hassan's WeChat QR code"
             className="w-full aspect-square object-contain rounded-2xl"
           />
