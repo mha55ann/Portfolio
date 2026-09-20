@@ -9,8 +9,20 @@ import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
+import WeChat from "./components/WeChat";
 
 function App() {
+  const isWeChatPage = window.location.pathname.replace(/\/$/, "") === "/wechat";
+
+  if (isWeChatPage) {
+    return (
+      <>
+        <Navbar />
+        <WeChat />
+      </>
+    );
+  }
+
   return (
     <>
       <Navbar />
