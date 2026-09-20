@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaWeixin } from "react-icons/fa";
+import wechatQr from "../images/wechat-qr.png";
 
 function WeChat() {
   return (
@@ -22,7 +23,7 @@ function WeChat() {
 
         <div className="mx-auto max-w-md rounded-3xl border border-white/10 bg-white p-5 shadow-2xl shadow-purple-950/40">
           <img
-            src="../images/wechat-qr.png"
+            src={wechatQr}
             alt="Muhammad Hassan's WeChat QR code"
             className="w-full aspect-square object-contain rounded-2xl"
           />
